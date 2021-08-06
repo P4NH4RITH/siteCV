@@ -1,14 +1,18 @@
 *{
     background-color:white;
-    font-size: 2vw;
+    font-size: 18px 1rem;
     font-family:merriweather, sans-serif;
     list-style-type:none;
     text-decoration:none;
 }
 
+body{
+    font-size: 62.5%;
+}
+
 @media handheld and (min-width:600px) {
     *{
-        font-size: 4vw; 
+        font-size: 1rem; 
     }
 
     .conteneur{
