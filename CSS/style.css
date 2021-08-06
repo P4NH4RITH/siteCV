@@ -1,5 +1,6 @@
+/* common styles*/
 *{
-    font-size: 18px;
+    font-size: 16px 1.6rem;
     font-family:merriweather, sans-serif;
     list-style-type:none;
     text-decoration:none;
@@ -9,28 +10,32 @@ html{
     font-size: 62.5%;
 }
 
-@media screen and (min-width:640px) {
+body{
+    overflow-x: hidden;
+    background-color: rgb(182, 179, 179);
+}
+/* End common styles */
+
+/* media queries */
+@media screen and (max-width:600px){
+    *{
+        font-size: 10px 1rem;
+    }
 
     .conteneur{
-        display: flex;
-        flex-direction:column-reverse;
-        flex-wrap: wrap;
+        border-style: none;
     }
 }
-
-body{
-    display: inline-flex;
-    width: 100%;
-    overflow-x: hidden;
-}
+/* End media queries */
 
 .conteneur{
-    width: 100%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
     border-style:double;
-    margin: 20px;
 }
 
 h2{
@@ -41,11 +46,12 @@ div{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin:10px;
 }
 
 .colonne-1{
     flex-direction: column;
-    flex: 20%;
+    flex: 25%;
 }
 
 .colonne-2{
@@ -70,5 +76,30 @@ div{
     display: flex;
 }
 
+table, tr, td{
+    text-align: left;
+    padding: 10px;
+}
 
+header img{
+    max-height:400px;
+    width: 100%;
+}
 
+nav div{
+    display:flex;
+    flex-direction: row;
+    background-color:indianred;
+    border-style: groove;
+}
+
+#menu a{
+    margin-right: auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightcoral;
+}
