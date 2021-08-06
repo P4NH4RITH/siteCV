@@ -1,0 +1,67 @@
+*{
+    background-color:white;
+    font-size: 2vw;
+    font-family:merriweather, sans-serif;
+    list-style-type:none;
+    text-decoration:none;
+}
+
+@media handheld and (min-width:600px) {
+    *{
+        font-size: 4vw; 
+    }
+
+    .conteneur{
+        display: flex;
+    }
+}
+
+.conteneur{
+    background-color: greenyellow;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+
+h2{
+    color: blue;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+.puce li{
+    list-style-type: square;
+}
+
+.puce ul li:child(1){
+    list-style-type: none;
+ }
+
+.contact ul{
+    display:grid;
+    grid-template-columns:  auto auto;
+}
+
+#contact1{
+    grid-column: 1/2;
+    text-align: center;
+}
+
+#contact2{
+    grid-column: 2/2;
+    text-align: center;
+}
+
+.atouts li{
+    font:bold;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
