@@ -1,6 +1,6 @@
 /* common styles*/
 *{
-    font-size: 16px 1.6rem;
+    font-size: 1.7rem;
     font-family:merriweather, sans-serif;
     list-style-type:none;
     text-decoration:none;
@@ -11,19 +11,25 @@ html{
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     background-color: rgb(182, 179, 179);
 }
 /* End common styles */
 
 /* media queries */
-@media screen and (max-width:600px){
+@media screen and (max-width:640px){
     *{
-        font-size: 10px 1rem;
+        font-size: 1.3rem;
+    }
+    
+    .colonne-1{
+        order: 2;
     }
 
-    .conteneur{
-        border-style: none;
+    .colonne-2{
+        order: 1;
     }
 }
 /* End media queries */
@@ -36,6 +42,7 @@ body{
     flex-direction:row;
     flex-wrap: wrap;
     border-style:double;
+    border-radius: 10px;
 }
 
 h2{
