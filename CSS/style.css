@@ -18,8 +18,12 @@ body{
     color: black;
 }
 
+#lightmode{
+    background-color: rgb(182, 179, 179);
+    color: black; 
+}
+
 .darkmode {
-    background-color: black;
     filter: invert()
 }
 /* End common styles */
