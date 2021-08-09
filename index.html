@@ -12,7 +12,7 @@
     <script src="JS/main.js" defer></script>
     <title>Panharith CV</title>
 </head>
-<body class="darkmode">
+<body class="darkmode" class="lightmode">
     <header>
         <img src="MEDIA/P_20210630_000252.jpg" alt="setup pc">
     </header>
@@ -22,113 +22,113 @@
             <a href="#monCV">Mon CV</a>
             <a href="#divers">Divers</a>
             <a href="#contact">Contact</a>
+            <button class="darkButton" onclick="darkmode()"><i class="fas fa-eye"></i></button>
         </div>
     </nav>
-    <section>
         <!--Première colonne du CV-->
-    <div class="conteneur">   
-        <div class="colonne-1">
-            <div class="informatique">
-                <h2>Informatiques :</h2>
-                <ul class="puce">
-                    <li><strong>Bureautique:</strong></li>
-                    <li>Word, Excel, PPT, LibreOffice</li>
-                </ul>
-                <ul class="puce">   
-                    <li><strong>Langages de programmation</strong></li>
-                    <li>C#</li>
-                    <li>C++</li>
-                    <li>Javascript</li>
-                </ul>
-                <ul class="puce">    
-                        <li><strong>Développement Web Back-End</strong> 
-                        <li>PHP + MySQL</li>
-                </ul>
-                <ul class="puce">    
-                    <li><strong>Développement Web Front-End</strong></li>
-                    <li>HTML5 + CSS3</li>
-                </ul>    
-                <ul class="puce">    
-                    <li><strong>Manipulation d'objets connectés</strong></li>
-                    <li>Drone</li>
-                    <li>Casque virtuel (Oculus)</li>               
-                </ul>
-                <ul class="puce">
-                    <li><strong>3D</strong></li>
-                    <li>Logiciels de création (Blender,FreeCad, TinkerCad...)</li>
-                    <li>Imprimante</li>
-                </ul>
-            </div>
-            <div class="atouts">
-                <h2>Atouts :</h2>
-                <ul>
-                    <li> Curieux</li>
-                    <li>Rigoureux</li>
-                    <li> Pédagogue</li>
-                    <li> Leadership silencieux</li>
-                    <li> Capacité d’adaptation</li>
-                    <li>Autonome</li>
-                </ul>
-            </div>
-            <div class="divers">
-                <h2>Divers</h2>
-                <ul>
-                    <li><a href="https://youtu.be/PUnyJkqVXPY">- Lien vidéo YT - mon PC que j'ai monté moi-même</a></li>
-                    <li>- Veilles Technologiques : WindowsOS / Nvidia / AMD</li>
-                    <li>- Japanimations : Musiquepop/rock japonaise (J-pop/J-rock), lire des mangas</li>
-                    <li>- Projet FCP base html/css : <a href="https://www.fcp-asso.org/panharith">www.fcp-asso.org/panharith</a></li>
-                </ul>
-            </div>
-        </div>
-
-<!--2nd colonne du CV-->
-        <div class="colonne-2">
-            <div class="contact">
-                <h1>Panharith Muong</h1>
-                <h2>Développeur web</h2>
-               <table>
-                    <tr>
-                        <td><i class="fas fa-map-marked-alt"></i> 109 rue de Menin 59520 Marquette-Lez-Lille</td>
-                        <td><i class="fas fa-envelope-open-text"></i> panharith.muong@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Né le : 20/12/1992</td>
-                        <td><i class="fas fa-mobile"></i> 06 95 49 94 96</td>
-                    </tr>
-               </table>
-                
-              <!--  <ul>
-                    <li><i class="fas fa-envelope-open-text"></i> panharith.muong@gmail.com</li>
-                    <li><i class="fas fa-map-marked-alt"></i> 109 rue de Menin</li> 
-                    <li>59520 Marquette-Lez-Lille</li>
-                    <li>Né le : 20/12/1992</li> 
-                    <li><i class="fas fa-mobile"></i> 06 95 49 94 96</li>                         
-                </ul> -->
-            </div>
-            <div class="experience">
-                    <h2>Expériences professionnelles</h2>
-                    <ul>
-                        <li><strong>Assistant Numérique (stage 1 mois)</strong></li>	
-                        <li>Fabrique Numérique - Marcq-en-Barœul - De février 2021 à mars 2021</li>
-                        <li>
-                            <ul>
-                                <li>- Encadrement des services civiques</li>
-                                <li>- Manipulation d'outils informatiques et de logiciels (imprimante 3D,appareil photo et caméra, plotter de découpe, logiciels 3D, retouchephoto et vidéo...)</li>
-                            </ul>
-                        </li>
-                    </ul>    
-                    <ul>
-                        <li><strong>Ouvrier en production alimentaire (CDD 1mois)</strong></li>	
-                        <li>Debaenst - Mouscron - Novembre 2016</li>
+        <section class="conteneur">   
+            <div class="colonne-1">
+                <div class="informatique">
+                    <h2>Informatiques :</h2>
+                    <ul class="puce">
+                        <li><strong>Bureautique:</strong></li>
+                        <li>Word, Excel, PPT, LibreOffice</li>
                     </ul>
-                    <ul>        
-                        <li><strong>Développeur Web (stage 3 semaines)</strong></li>	
-                        <li>Association Initiative Jeunesse - Wasquehal - De juin 2012 à juillet 2012</li>
-                        <li>- Création du site web de l'association</li>
-                    </ul>                   
+                    <ul class="puce">   
+                        <li><strong>Langages de programmation</strong></li>
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>Javascript</li>
+                    </ul>
+                    <ul class="puce">    
+                            <li><strong>Développement Web Back-End</strong> 
+                            <li>PHP + MySQL</li>
+                    </ul>
+                    <ul class="puce">    
+                        <li><strong>Développement Web Front-End</strong></li>
+                        <li>HTML5 + CSS3</li>
+                    </ul>    
+                    <ul class="puce">    
+                        <li><strong>Manipulation d'objets connectés</strong></li>
+                        <li>Drone</li>
+                        <li>Casque virtuel (Oculus)</li>               
+                    </ul>
+                    <ul class="puce">
+                        <li><strong>3D</strong></li>
+                        <li>Logiciels de création (Blender,FreeCad, TinkerCad...)</li>
+                        <li>Imprimante</li>
+                    </ul>
+                </div>
+                <div class="atouts">
+                    <h2>Atouts :</h2>
+                    <ul>
+                        <li> Curieux</li>
+                        <li>Rigoureux</li>
+                        <li> Pédagogue</li>
+                        <li> Leadership silencieux</li>
+                        <li> Capacité d’adaptation</li>
+                        <li>Autonome</li>
+                    </ul>
+                </div>
+                <div class="divers">
+                    <h2>Divers</h2>
+                    <ul>
+                        <li><a href="https://youtu.be/PUnyJkqVXPY">- Lien vidéo YT - mon PC que j'ai monté moi-même</a></li>
+                        <li>- Veilles Technologiques : WindowsOS / Nvidia / AMD</li>
+                        <li>- Japanimations : Musiquepop/rock japonaise (J-pop/J-rock), lire des mangas</li>
+                        <li>- Projet FCP base html/css : <a href="https://www.fcp-asso.org/panharith">www.fcp-asso.org/panharith</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="diplomes">
-                    <h2>DIPLÔMES ET FORMATIONS</h2>
+
+            <!--2nd colonne du CV-->
+            <div class="colonne-2">
+                <div class="contact">
+                    <h1>Panharith Muong</h1>
+                    <h2>Développeur web</h2>
+                    <table>
+                            <tr>
+                                <td><i class="fas fa-map-marked-alt"></i> 109 rue de Menin 59520 Marquette-Lez-Lille</td>
+                                <td><i class="fas fa-envelope-open-text"></i> panharith.muong@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Né le : 20/12/1992</td>
+                                <td><i class="fas fa-mobile"></i> 06 95 49 94 96</td>
+                            </tr>
+                    </table>
+                        
+                    <!--  <ul>
+                            <li><i class="fas fa-envelope-open-text"></i> panharith.muong@gmail.com</li>
+                            <li><i class="fas fa-map-marked-alt"></i> 109 rue de Menin</li> 
+                            <li>59520 Marquette-Lez-Lille</li>
+                            <li>Né le : 20/12/1992</li> 
+                            <li><i class="fas fa-mobile"></i> 06 95 49 94 96</li>                         
+                        </ul> -->
+                </div>
+                <div class="experience">
+                        <h2>Expériences professionnelles</h2>
+                        <ul>
+                            <li><strong>Assistant Numérique (stage 1 mois)</strong></li>	
+                            <li>Fabrique Numérique - Marcq-en-Barœul - De février 2021 à mars 2021</li>
+                            <li>
+                                <ul>
+                                    <li>- Encadrement des services civiques</li>
+                                    <li>- Manipulation d'outils informatiques et de logiciels (imprimante 3D,appareil photo et caméra, plotter de découpe, logiciels 3D, retouchephoto et vidéo...)</li>
+                                </ul>
+                            </li>
+                        </ul>    
+                        <ul>
+                            <li><strong>Ouvrier en production alimentaire (CDD 1mois)</strong></li>	
+                            <li>Debaenst - Mouscron - Novembre 2016</li>
+                        </ul>
+                        <ul>        
+                            <li><strong>Développeur Web (stage 3 semaines)</strong></li>	
+                            <li>Association Initiative Jeunesse - Wasquehal - De juin 2012 à juillet 2012</li>
+                            <li>- Création du site web de l'association</li>
+                        </ul>                   
+                </div>
+                <div class="diplomes">
+                        <h2>DIPLÔMES ET FORMATIONS</h2>
                         <ul>
                             <li><strong>Prépa Numérique</strong></li> 
                             <li>Ecole de la 2ème Chance (E2C)- Roubaix - Depuis juin 2021</li>
@@ -146,7 +146,7 @@
                         </ul>
                         <ul>   
                             <li><strong>Formation: Technique de base pour le développement Web</strong></li>
-                             <li>AFPA - Roubaix - De septembre 2018 à novembre 2018</li>
+                            <li>AFPA - Roubaix - De septembre 2018 à novembre 2018</li>
                         </ul>
                         <ul>
                             <li><strong>2ème année de BTS IRIS (Informatique et Réseaux pour l’industrie et les Services techniques)</strong></li>
@@ -156,14 +156,12 @@
                             <li><strong>Bac STI EL</strong></li>
                             <li>Lycée Jean Rostand - Roubaix - Juillet 2011</li>                              
                         </ul>
-            </div>       
-        </div>
-    </div>
-    </section>
+                </div>       
+            </div>
+        </section>
     <footer>
-        <p>copyright</p>
+        <p>copyrights<i class="far fa-copyright"></i> tous droits réservés</p>
         <a href="#top">Retour en haut de la page</a>
-        <button type="button" class="button" onclick="darkmode()"><i class="fas fa-eye"></i></button>
     </footer>
 </body>
 </html>

@@ -15,6 +15,16 @@ body{
     flex-direction: column;
     overflow-x: hidden;
     background-color: rgb(182, 179, 179);
+    color: black;
+}
+.lightmode{
+    background-color: rgb(182, 179, 179);
+    color: black; 
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
 }
 /* End common styles */
 
@@ -42,7 +52,7 @@ body{
 
 @media screen and (max-width:1175px){
     *{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .colonne-1{
@@ -62,8 +72,8 @@ body{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-    /*border-style:double;*/
-    border-radius: 10px;
+    /*border-style:double;
+    border-radius: 10px;*/
 }
 
 h2{
@@ -131,8 +141,12 @@ nav div{
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: lightcoral;
+}
+
+footer a{
+    margin-top: 18px;
 }
 
 button{
@@ -142,7 +156,3 @@ button{
     width: 35px;
 }
 
-.darkmode {
-    background-color: black;
-    color: white;
-  }
