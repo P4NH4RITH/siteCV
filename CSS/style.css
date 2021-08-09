@@ -110,3 +110,10 @@ footer{
     justify-content: space-between;
     background-color: lightcoral;
 }
+
+button{
+    background-color: rgb(211, 210, 210);
+    border-radius: 10px;
+    height: 30px;
+    width: 35px;
+}
