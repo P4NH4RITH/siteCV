@@ -15,17 +15,9 @@ body{
     flex-direction: column;
     overflow-x: hidden;
     background-color: rgb(182, 179, 179);
-    color: black;
-}
-
-#lightmode{
-    background-color: rgb(182, 179, 179);
     color: black; 
 }
 
-.darkmode {
-    filter: invert()
-}
 /* End common styles */
 
 /* media queries */
@@ -64,6 +56,21 @@ body{
     }
 }
 /* End media queries */
+
+/* JS changes */
+.darkmode{
+    filter: invert();
+}
+
+.lightmode{
+    background-color: rgb(182, 179, 179);
+    color: black; 
+}
+
+
+
+
+/* End JS changes */
 
 .conteneur{
     width: 60%;
