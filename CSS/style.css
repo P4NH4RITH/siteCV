@@ -21,7 +21,11 @@ body{
 /* End common styles */
 
 /* media queries */
-@media screen and (max-width:640px){
+@media screen and (min-width:360px){
+    *{
+        font-size: 1.5rem;    
+    }
+
     .colonne-1{
         order: 2;
     }
@@ -38,7 +42,11 @@ body{
     } 
 }
 
-@media screen and (max-width:1029px){  
+@media screen and (min-width:875px){  
+    *{
+        font-size: 2rem;    
+    }
+    
     .colonne-1{
         order: 2;
     }
@@ -47,6 +55,21 @@ body{
         order: 1;
     }
 }
+
+@media screen and (min-width:1042px){  
+    *{
+        font-size: 1.5rem;    
+    }
+    
+    .colonne-1{
+        order: 1;
+    }
+
+    .colonne-2{
+        order: 2;
+    }
+}
+
 /* End media queries */
 
 /* JS changes */
@@ -196,6 +219,7 @@ button{
 #menu a:hover{
     background-color: rgb(33, 206, 33);
 }
+
 
 
 
