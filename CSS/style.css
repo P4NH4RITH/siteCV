@@ -1,9 +1,8 @@
 /* common styles*/
 *{
-    font-size: 1.7rem;
     font-family:merriweather, sans-serif;
     list-style-type:none;
-    text-decoration:none;
+    text-decoration:none
 }
 
 html{
@@ -22,10 +21,6 @@ body{
 
 /* media queries */
 @media screen and (max-width:640px){
-    *{
-        font-size: 1.3rem;
-    }
-    
     .colonne-1{
         order: 2;
     }
@@ -40,13 +35,20 @@ body{
         padding: 10px;
         display:block;
     }
+
+    .conteneur{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        /*border-style:double;
+        border-radius: 10px;*/
+    }    
 }
 
-@media screen and (max-width:1175px){
-    *{
-        font-size: 1.8rem;
-    }
-    
+@media screen and (max-width:1175px){  
     .colonne-1{
         order: 2;
     }
@@ -54,20 +56,30 @@ body{
     .colonne-2{
         order: 1;
     }
+
+    .conteneur{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        /*border-style:double;
+        border-radius: 10px;*/
+    }    
 }
 /* End media queries */
 
 /* JS changes */
-.darkmode{
-    filter: invert();
-}
-
 .lightmode{
     background-color: rgb(182, 179, 179);
     color: black; 
 }
 
-
+.darkmode{
+    background-color: rgb(88, 87, 87);
+    filter: brightness(0.5) contrast(1.2);
+}
 
 
 /* End JS changes */
@@ -134,23 +146,26 @@ table, tr, td{
 /* Section styles */
 
 header img{
-    max-height:500px;
+    max-height:400px;
     width: 100%;
 }
 
+/*
 #menu a{
     margin-right: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    border-radius: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 12px;
 }
 
 #menu a:hover{
     margin-right: auto;
     background-color: brown;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: darkblue 2px 2px;
 }
+
 
 nav div{
     display:flex;
@@ -158,6 +173,7 @@ nav div{
     background-color:indianred;
     border-style: groove;
 }
+*/
 
 footer{
     display: flex;
@@ -178,4 +194,27 @@ button{
     height: 30px;
     width: 35px;
 }
+
+#menu{
+    width: 100px;
+    height: 40px;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu a{
+    display: flex;
+    position: relative;
+    background-color: darkcyan;
+    box-shadow: darkblue 3px 3px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+#menu a:hover{
+    background-color: darkgreen;
+}
+
+
 
