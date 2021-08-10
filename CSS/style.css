@@ -129,9 +129,27 @@ table, tr, td{
     width: 100%;
 }
 
+
+
+/* Section styles */
+
 header img{
-    max-height:400px;
+    max-height:500px;
     width: 100%;
+}
+
+#menu a{
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 15px;
+}
+
+#menu a:hover{
+    margin-right: auto;
+    background-color: brown;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 nav div{
@@ -139,10 +157,6 @@ nav div{
     flex-direction: row;
     background-color:indianred;
     border-style: groove;
-}
-
-#menu a{
-    margin-right: auto;
 }
 
 footer{
@@ -155,6 +169,8 @@ footer{
 footer a{
     margin-top: 18px;
 }
+
+/* End section styles */
 
 button{
     background-color: rgb(211, 210, 210);
