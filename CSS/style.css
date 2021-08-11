@@ -33,7 +33,6 @@ body{
 }
 /* End JS changes */
 
-
 .conteneur{
     width: 60%;
     margin-left: 20%;
@@ -177,17 +176,14 @@ button{
     border-radius: 5px;
     text-align: center;
     margin-bottom: 5%;
-    overflow: scroll;
 }
 
 h3{
     color: mediumslateblue;
 }
 
-
-
 /*---------------------------- media queries ------------------------*/
-@media screen and (min-width:360px){
+@media screen and (min-width:280px){
     *{
         font-size: 1.5rem;    
     }
@@ -231,11 +227,24 @@ h3{
         border-collapse: collapse;
         padding: 10px;
         display:block;
-    } 
+    }
+    
+    .presentation{
+        width: 99vw;
+        background-color: lightblue;
+        box-shadow: mediumblue 1px 2px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    h3{
+        color: mediumslateblue;
+    }
 }
 
 
-@media screen and (min-width:1080px){
+@media screen and (min-width:1024px){
     *{
         font-size: 1.5rem;    
     }
@@ -249,6 +258,8 @@ h3{
         margin-left: 20%;
         margin-right: 20%;
         flex-direction: row;
+        border-style: double;
+        border-radius: 20px;
     }
 
     .colonne-1{
@@ -266,6 +277,24 @@ h3{
         padding: 10px;
         display:block;
     } 
+
+    .presentation{
+        width: 60%;
+        height: 100px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 5%;
+        background-color: lightblue;
+        box-shadow: mediumblue 1px 2px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 5%;
+        overflow: auto;
+    }
+    
+    h3{
+        color: mediumslateblue;
+    }
 }
 
 
