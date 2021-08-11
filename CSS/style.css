@@ -173,7 +173,7 @@ button{
 /* media queries */
 @media screen and (min-width:360px){
     *{
-        font-size: 1.2rem;    
+        font-size: 1.5rem;    
     }
 
     body{
@@ -187,12 +187,12 @@ button{
     }
 
     .colonne-1{
-        width: 140%;
+        width: 160%;
         order: 2;
     }
 
     .colonne-2{
-        width: 140%;
+        width: 160%;
         order: 1;
     }   
 
@@ -219,9 +219,9 @@ button{
 }
 
 
-@media screen and (min-width:1028px){
+@media screen and (min-width:1080px){
     *{
-        font-size: 2rem;    
+        font-size: 1.5rem;    
     }
 
     body{
@@ -232,6 +232,7 @@ button{
         width:60%;
         margin-left: 20%;
         margin-right: 20%;
+        flex-direction: row;
     }
 
     .colonne-1{
@@ -240,6 +241,7 @@ button{
 
     .colonne-2{
         order: 2;
+        margin-left: 20px;
     }
 
     table, tr, td{
