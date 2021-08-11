@@ -170,7 +170,23 @@ button{
 }
 
 
-/* media queries */
+.presentation{
+    width: 99vw;
+    background-color: lightblue;
+    box-shadow: mediumblue 1px 2px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5%;
+    overflow: scroll;
+}
+
+h3{
+    color: mediumslateblue;
+}
+
+
+
+/*---------------------------- media queries ------------------------*/
 @media screen and (min-width:360px){
     *{
         font-size: 1.5rem;    
