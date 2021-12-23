@@ -34,6 +34,11 @@ body{
 }
 /* End JS changes */
 
+.mainContent{
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
 .conteneur{
     width: 60%;
     margin-left: 20%;
@@ -64,6 +69,7 @@ section div{
 }
 
 .colonne-2{
+    background-color: white;
     flex-direction: column;
     flex: 60%;
 }
@@ -288,11 +294,14 @@ h3{
 
     .colonne-1{
         order: 1;
+        padding-left: 20px;
+        border-radius: 20px 0 0 20px;
     }
 
     .colonne-2{
         order: 2;
-        margin-left: 20px;
+        padding-left: 20px;
+        border-radius: 0 20px 20px 0;
     }
 
     table, tr, td{
