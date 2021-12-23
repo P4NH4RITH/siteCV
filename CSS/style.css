@@ -34,6 +34,11 @@ body{
 }
 /* End JS changes */
 
+.mainContent{
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
 .conteneur{
     width: 60%;
     margin-left: 20%;
