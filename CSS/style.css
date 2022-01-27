@@ -9,14 +9,6 @@
 html{
     font-size: 62.5%;
 }
-
-body{
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    background-color: rgb(182, 179, 179);
-    color: black;
-}
 /* End common styles */
 
 
@@ -35,8 +27,14 @@ body{
 /* End JS changes */
 
 .mainContent{
-    width: 80%;
-    margin: 0 10% 0 10%;
+    background-image: url(/MEDIA/fond.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
 }
 
 .conteneur{
@@ -47,8 +45,16 @@ body{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-    /*border-style:double;
-    border-radius: 10px;*/
+}
+
+.photo{
+    position: absolute;
+    bottom: 50px;
+    right:5px;
+}
+
+div p {
+    font-size: 20px;
 }
 
 h2{
@@ -99,47 +105,15 @@ table, tr, td{
     width: 100%;
 }
 
-
-/* Section styles */
-
-header img{
-    max-height:400px;
-    width: 80%;
-    margin-left: 10%;
-    border-radius: 5px;
-}
-
-/* old navbar style
-#menu a{
-    margin-right: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 12px;
-}
-
-#menu a:hover{
-    margin-right: auto;
-    background-color: brown;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-shadow: darkblue 2px 2px;
-}
-
-
-nav div{
-    display:flex;
-    flex-direction: row;
-    background-color:indianred;
-    border-style: groove;
-}
-*/
-
 footer{
+    width:100%;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: lightcoral;
     border-radius: 5px;
+    bottom:0;
 }
 
 footer a{
@@ -180,8 +154,6 @@ button{
 
 .presentation{
     width: 99vw;
-    background-color: lightblue;
-    box-shadow: mediumblue 1px 2px;
     border-radius: 5px;
     text-align: center;
     margin-bottom: 5%;
@@ -189,8 +161,6 @@ button{
 
 .divSect{
     width: 99vw;
-    background-color: lightblue;
-    box-shadow: mediumblue 1px 2px;
     border-radius: 5px;
     text-align: center;
     margin-bottom: 5%;
@@ -204,10 +174,6 @@ h3{
 @media screen and (min-width:280px){
     *{
         font-size: 1.5rem;    
-    }
-
-    body{
-        width: 100%;
     }
 
     .conteneur{
@@ -248,8 +214,6 @@ h3{
     
     .presentation{
         width: 99vw;
-        background-color: lightblue;
-        box-shadow: mediumblue 1px 2px;
         border-radius: 5px;
         text-align: center;
         margin-bottom: 5%;
@@ -257,15 +221,11 @@ h3{
     
     .divSect{
         width: 99vw;
-        height: 100px;
         margin-left: 0%;
         margin-right: 0%;
         margin-bottom: 5%;
-        background-color: lightblue;
-        box-shadow: mediumblue 1px 2px;
         border-radius: 5px;
         text-align: center;
-        margin-bottom: 5%;
         overflow: auto;
     }
 
@@ -278,10 +238,6 @@ h3{
 @media screen and (min-width:1000px){
     *{
         font-size: 1.5rem;    
-    }
-
-    body{
-        width: 100%;
     }
 
     .conteneur{
@@ -318,21 +274,15 @@ h3{
         margin-left: 20%;
         margin-right: 20%;
         margin-bottom: 5%;
-        background-color: lightblue;
-        box-shadow: mediumblue 0.5px 1px;
         border-radius: 5px;
         text-align: center;
-        margin-bottom: 5%;
     }
 
     .divSect{
         width: 30%;
-        height: 150px;
         margin-left: 35%;
         margin-right: 20%;
         margin-bottom: 5%;
-        background-color: lightblue;
-        box-shadow: mediumblue 0.5px 1px;
         border-radius: 5px;
         text-align: center;
         overflow: auto;

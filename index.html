@@ -15,215 +15,31 @@
     <body class="lightmode">
         <div class="mainContent">      
              <header>
-                <img src="MEDIA/P_20210630_000252.jpg" alt="setup pc">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="/index.html">Accueil</a></li>
+                        <li><a href="/CV.html">Mon CV</a></li>
+                        <li><a href="/divers.html">Divers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><button class="darkButton" onclick="darkmode()"><i class="fas fa-eye"></i></button></li>
+                    </ul>            
+                </nav>
             </header>
 
-            <nav id="menu">
-                <div>
-                    <a href="#Accueil">Accueil</a>
-                    <a href="#monCV">Mon CV</a>
-                    <a href="#divers">Divers</a>
-                    <a href="#contact">Contact</a>
-                    <button class="darkButton" onclick="darkmode()"><i class="fas fa-eye"></i></button>
-                </div>            
-            </nav>
-
-            <section class="hello">
-                <div class="presentation">
-                    <h3>
-                        Présentation
-                    </h3>
-                    <p>
-                        Hello world, je suis Panharith, 29ans, future développeur web.<br/>
-                        Peu bavard, passionné de nouvelles technologies et de jeux vidéo.
-                    </p>
-                    <p>     
-                        <strong>A la recherche d'une formation qualifiante ou un job en tant que développeur web débutant.</strong>
-                    </p>
-                </div>
-                <div class="divSect"> 
-                    <h3>
-                        Mes Hobbies
-                    </h3>
-                    <p>
-                        - Jeux vidya <br/>
-                        - Faire un peu de vidéo de gameplay avec montage vidéo occasionnellement.<br/>
-                        - Rester à jour sur les nouvelles architectures des composants PC.
-                    </p>
-                </div>
-
-                <div class="divSect"> 
-                    <h3>
-                        Config windows 10 PC
-                    </h3>
-                    <ul>
-                        <li>Processeur AMD Ryzen 5600x</li>
-                        <li>Carte graphique RTX 3070 Ti</li>
-                        <li>Ram DDR4 3600Mhz 4*8go </li>
-                        <li>3To - 2.5" sata + m.2 sata + m.2 nvme SSD</li>
-                    </ul>
-                    <h3>
-                        Config windows 11 PC
-                    </h3>
-                    <ul>
-                        <li>Processeur AMD Ryzen 3600</li>
-                        <li>Carte graphique RTX 2060</li>
-                        <li>Ram DDR4 3200Mhz 2*8go </li>
-                        <li>2.5To - HDD + m.2 nvme SSD</li>
-                    </ul>
-                    <h3>
-                        Softwares
-                    </h3>
-                    <ul>
-                        <li>Davinci Resolve: montage vidéo</li>
-                        <li>OBS Studio: capture vidéo</li>
-                        <li>VMware</li>
-                        <li>pc benchmarks: aida64, cinebench R23 </li>
-                    </ul>
-                </div>
-            </section>  
-
-            <!--Première colonne du CV-->
-            <section class="conteneur">   
-                <div class="colonne-1">
-                    <div class="informatique">
-                        <h2>Informatiques :</h2>
-                        <ul class="puce">
-                            <li><strong>Bureautique:</strong></li>
-                            <li>Word, Excel, PPT, LibreOffice</li>
-                        </ul>
-                        <ul class="puce">   
-                            <li><strong>Langages de programmation</strong></li>
-                            <li>C#</li>
-                            <li>C++</li>
-                            <li>Javascript</li>
-                        </ul>
-                        <ul class="puce">    
-                                <li><strong>Développement Web Back-End</strong> 
-                                <li>PHP + MySQL</li>
-                        </ul>
-                        <ul class="puce">    
-                            <li><strong>Développement Web Front-End</strong></li>
-                            <li>HTML5 + CSS3</li>
-                        </ul>    
-                        <ul class="puce">    
-                            <li><strong>Manipulation d'objets connectés</strong></li>
-                            <li>Drone</li>
-                            <li>Casque virtuel (Oculus)</li>               
-                        </ul>
-                        <ul class="puce">
-                            <li><strong>3D</strong></li>
-                            <li>Logiciels de création (Blender, FreeCad, TinkerCad...)</li>
-                            <li>Imprimante</li>
-                        </ul>
-                    </div>
-                    <div class="atouts">
-                        <h2>Atouts :</h2>
-                        <ul>
-                            <li>Curieux</li>
-                            <li>Rigoureux</li>
-                            <li>Pédagogue</li>
-                            <li>Leadership silencieux</li>
-                            <li>Capacité d’adaptation</li>
-                            <li>Autonome</li>
-                        </ul>
-                    </div>
-                    <div class="divers">
-                        <h2>Divers</h2>
-                        <ul>
-                            <li><a href="https://youtu.be/PUnyJkqVXPY">- Lien vidéo YT - mon PC monté moi-même</a></li>
-                            <li>- Veilles Technologiques : WindowsOS / Nvidia / AMD</li>
-                            <li>- Japanimations : Musique pop/rock japonaise (J-pop/J-rock), lire des mangas</li>
-                            <li>- Projet FCP base html/css : <a href="https://www.fcp-asso.org/panharith">www.fcp-asso.org/panharith</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--2nd colonne du CV-->
-                <div class="colonne-2">
-                    <div class="contact">
-                        <h1>Panharith Muong</h1>
-                        <h2>Développeur web</h2>
-                        <table>
-                                <tr>
-                                    <td><i class="fas fa-map-marked-alt"></i> 109 rue de Menin 59520 Marquette-Lez-Lille</td>
-                                    <td><i class="fas fa-envelope-open-text"></i> panharith.muong@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td>Né le : 20/12/1992</td>
-                                    <td><i class="fas fa-mobile"></i> 06 95 49 94 96</td>
-                                </tr>
-                        </table>
-                    </div>
-                    <div class="experience">
-                            <h2>Expériences professionnelles</h2>
-                            <ul>
-                                <li><strong>développeur front-end (stage 1 mois)</strong></li>	
-                                <li>Legamedia - distrolution merch - De Septembre à Octobre 2021</li>
-                                <li>Refonte partie front du site Beertastic</li>
-                                <li>Prestashop Smarty - Figma - GitLab Nexylan - Trello</li>
-                            </ul>
-                            <ul>
-                                <li><strong>Assistant Numérique (stage 1 mois)</strong></li>	
-                                <li>Fabrique Numérique - Marcq-en-Barœul - De février 2021 à mars 2021</li>
-                                <li>
-                                    <ul>
-                                        <li>- Encadrement des services civiques</li>
-                                        <li>- Manipulation d'outils informatiques et de logiciels (imprimante 3D,appareil photo et caméra, plotter de découpe, logiciels 3D, retouche photo et vidéo...)</li>
-                                    </ul>
-                                </li>
-                            </ul>    
-                            <ul>
-                                <li><strong>Ouvrier en production alimentaire (CDD 1mois)</strong></li>	
-                                <li>Debaenst - Mouscron - Novembre 2016</li>
-                            </ul>
-                            <ul>        
-                                <li><strong>Développeur Web (stage 3 semaines)</strong></li>	
-                                <li>Association Initiative Jeunesse - Wasquehal - De juin 2012 à juillet 2012</li>
-                                <li>- Création du site web de l'association</li>
-                            </ul>                   
-                    </div>
-                    <div class="diplomes">
-                            <h2>DIPLÔMES ET FORMATIONS</h2>
-                            <ul>
-                                <li><strong>Formation développeur Front-End</strong></li> 
-                                <li>SIMPLON - Du 2 août au 11 septembre</li>
-                                <li>- projets communs </li>    
-                                <li>- Initiation à la méthode agile et scrum</li>    
-                                <li>- Stage en entreprise</li>
-                            </ul>                    
-                            <ul>
-                                <li><strong>Prépa Numérique</strong></li> 
-                                <li>Ecole de la 2ème Chance (E2C)- Roubaix - juin 2021 jusqu'a août 2021</li>
-                                <li>- Initiation et perfectionnement au numérique (3D, codage,développement web...)</li>    
-                                <li>- Accompagnement au projet professionnel</li>    
-                                <li>- Stages en entreprise</li>
-                            </ul>
-                            <ul>        
-                                <li><strong>Certification CléA</strong></li>
-                                <li>FCP - Marquette-Lez-Lille - Obtention depuis avril 2021</li>
-                            </ul>
-                            <ul>
-                                <li><strong>Formation SIEG – dispositif « Dynamique Vers l’Emploi »</strong>
-                                <li>FCP - Marquette-Lez-Lille - De juin 2020 à avril 2021</li>
-                            </ul>
-                            <ul>   
-                                <li><strong>Formation: Technique de base pour le développement Web</strong></li>
-                                <li>AFPA - Roubaix - De septembre 2018 à novembre 2018</li>
-                            </ul>
-                            <ul>
-                                <li><strong>2ème année de BTS IRIS (Informatique et Réseaux pour l’industrie et les Services techniques)</strong></li>
-                                <li>Lycée Jean Rostand - Roubaix - De septembre 2012 à juillet 2013</li>
-                                <li>Base de programmation C++ et C#</li>
-                            </ul>
-                            <ul> 
-                                <li><strong>Bac STI EL</strong></li>
-                                <li>Lycée Jean Rostand - Roubaix - Juillet 2011</li>                              
-                            </ul>
-                    </div>       
-                </div>
-            </section>
-
+            <img class="photo" src="/MEDIA/Moi.png"><img>
+            <div class="presentation">
+                <h3>
+                    Présentation
+                </h3>
+                <p>
+                    Hello world, je suis Panharith, 29ans, future développeur web.<br/>
+                    Peu bavard, passionné de nouvelles technologies et de jeux vidéo.
+                </p>
+                <p>     
+                    <strong>A la recherche d'une formation qualifiante ou un job en tant que développeur intégrateur/web débutant.</strong>
+                </p>
+            </div>
+             
             <footer>
                 <p>copyrights<i class="far fa-copyright"></i> tous droits réservés</p>
                 <a href="#top">Retour en haut de la page</a>
