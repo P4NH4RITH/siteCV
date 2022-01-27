@@ -51,6 +51,8 @@ html{
     position: absolute;
     bottom: 50px;
     right:5px;
+    width: 30%;
+    height: auto;
 }
 
 div p {
@@ -181,6 +183,12 @@ h3{
         flex-direction: column;
     }
 
+    .photo{
+        position: absolute;
+        width: 30%;
+        height: auto;
+    }
+
     .colonne-1{
         width: 160%;
         order: 2;
@@ -247,6 +255,12 @@ h3{
         flex-direction: row;
         border-style: double;
         border-radius: 20px;
+    }
+
+    .photo{
+        position: absolute;
+        width: 30%;
+        height: auto;
     }
 
     .colonne-1{
