@@ -109,13 +109,14 @@ table, tr, td{
 
 footer{
     width:100%;
-    position: absolute;
+    position: fixed;
+    bottom:0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: lightcoral;
     border-radius: 5px;
-    bottom:0;
+    
 }
 
 footer a{
