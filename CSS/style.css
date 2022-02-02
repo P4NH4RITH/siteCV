@@ -36,7 +36,6 @@ html{
     position: relative;
     border-radius: 5px;
 }
-
 .conteneur{
     width: 60%;
     margin-left: 20%;
@@ -46,7 +45,6 @@ html{
     flex-direction:row;
     flex-wrap: wrap;
 }
-
 .photo{
     position: absolute;
     bottom: 0;
@@ -54,74 +52,63 @@ html{
     width: 40%;
     height: auto;
 }
-
 div p {
     font-size: 20px;
 }
-
 h2{
     color: blue;
 }
-
 section div{
     display: flex;
     flex-direction: column;
     width: 80%;
     margin:10px;
 }
-
 .colonne-1{
     flex-direction: column;
     flex: 30%;
     flex-wrap: wrap;
 }
-
 .colonne-2{
     background-color: white;
     flex-direction: column;
     flex: 60%;
 }
-
 .puce li{
     list-style-type: square;
 }
-
 .atouts li{
     font:bold;
     margin-bottom: 0.5rem;
 }
-
 .colonne-1{
     background-color: gray;
     border-radius: 15px;
 }
-
 .contact ul li{
     display: flex;
 }
-
 table, tr, td{
     text-align: left;
     border-collapse: collapse;
     padding: 10px;
     width: 100%;
 }
-
 footer{
-    position: absolute;
-    bottom:0;
+    position: fixed;
+    bottom: 15%;
+    left: -6.5%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: rgba(74, 113, 138, 0.445);
     border-radius: 5px;
-    
+    transform: rotateZ(-90deg);
 }
-
 footer a{
-    margin-top: 18px;
+    font-size: 1.5rem;
+    margin: 18px;
 }
-
 /* End section styles */
 
 button{
@@ -135,13 +122,11 @@ button{
     width: 100%;
     height: 60px;
 }
-
 #menu li{
     display: inline-flex;
     justify-content:space-between;
     margin-left: 10%;
 }
-
 #menu a{
     font-size:larger;
     color: #fff;
@@ -153,94 +138,82 @@ button{
     padding: 10px 50px;
     margin-bottom: 5px;
 }
-
 #menu a:hover{
     background-color: rgb(33, 206, 33);
 }
-
-
 .presentation{
     color:#fff;
-    width: 99vw;
+    width: 70%;
     border-radius: 5px;
     text-align: center;
     margin-bottom: 5%;
     position: relative;
     top: 25%;
-    left: 5%;
+    left: 0;
 }
-
+.presentation p{
+    font-size: 30px;
+}
 .hello{
     color:#fff;
 }
-
 .divSect{
     width: 99vw;
     border-radius: 5px;
     text-align: center;
     margin-bottom: 5%;
 }
-
 h3{
     color: mediumslateblue;
     font-size: 30px;
 }
 
 /*---------------------------- media queries ------------------------*/
-@media screen and (min-width:280px){
+@media screen and (max-width:360px){
     *{
         font-size: 1.5rem;    
     }
-
     .conteneur{
         margin-left: 0%;
         flex-direction: column;
     }
-
     .photo{
         position: absolute;
         width: 40%;
         height: auto;
     }
-
     .colonne-1{
         width: 160%;
         order: 2;
     }
-
     .colonne-2{
         width: 160%;
         order: 1;
     }   
-
     table, tr, td{
         text-align: left;
         border-collapse: collapse;
         padding: 15px;
         display:block;
     } 
-
     section div{
         display: flex;
         flex-direction: column;
         width: 100%;
         margin:0px;
     }
-
     table, tr, td{
         text-align: left;
         border-collapse: collapse;
         padding: 10px;
         display:block;
     }
-    
     .presentation{
         width: 99vw;
         border-radius: 5px;
         text-align: center;
         margin-bottom: 5%;
     }
-    
     .divSect{
         width: 99vw;
         margin-left: 0%;
@@ -250,18 +223,83 @@ h3{
         text-align: center;
         overflow: auto;
     }
-
     h3{
         color: mediumslateblue;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:414px) and (min-width:360px){
+    *{
+        font-size: 1.5rem;    
+    }
+    .conteneur{
+        margin-left: 0%;
+        flex-direction: column;
+    }
+    .photo{
+        position: absolute;
+        width: 40%;
+        height: auto;
+    }
+    .colonne-1{
+        width: 160%;
+        order: 2;
+    }
+    .colonne-2{
+        width: 160%;
+        order: 1;
+    }   
+    table, tr, td{
+        text-align: left;
+        border-collapse: collapse;
+        padding: 15px;
+        display:block;
+    } 
+    section div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin:0px;
+    }
+    table, tr, td{
+        text-align: left;
+        border-collapse: collapse;
+        padding: 10px;
+        display:block;
+    }
+    .presentation{
+        width: 99vw;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .divSect{
+        width: 99vw;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 5%;
+        border-radius: 5px;
+        text-align: center;
+        overflow: auto;
+    }
+    h3{
+        color: mediumslateblue;
+    }
+    footer{
+        left:-11.5%;
+        transform: rotateZ(-90deg) scale(50%);
+
     }
 }
 
 
-@media screen and (min-width:1000px){
+@media screen and (max-width:1000px) and (min-width:414px) {
     *{
         font-size: 1.5rem;    
     }
-
     .conteneur{
         width:60%;
         margin-left: 20%;
@@ -270,39 +308,33 @@ h3{
         border-style: double;
         border-radius: 20px;
     }
-
     .photo{
         position: absolute;
         width: 40%;
         height: auto;
     }
-
     .colonne-1{
         order: 1;
         padding-left: 20px;
         border-radius: 20px 0 0 20px;
     }
-
     .colonne-2{
         order: 2;
         padding-left: 20px;
         border-radius: 0 20px 20px 0;
     }
-
     table, tr, td{
         text-align: left;
         border-collapse: collapse;
         padding: 10px;
         display:block;
     } 
-
     .presentation{
         width: 60%;
         height: auto;
         border-radius: 5px;
         text-align: center;
     }
-
     .divSect{
         width: 30%;
         margin-left: 35%;
@@ -312,9 +344,12 @@ h3{
         text-align: center;
         overflow: auto;
     }
-    
     h3{
         color: mediumslateblue;
+    }
+    footer{
+        left:-11.5%;
+        transform: rotateZ(-90deg) scale(50%);
     }
 }
 
