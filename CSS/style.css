@@ -4,7 +4,6 @@
     list-style-type:none;
     text-decoration:none;
     font-size: 1rem;
-    color:#fff;
 }
 
 html{
@@ -161,6 +160,7 @@ button{
 
 
 .presentation{
+    color:#fff;
     width: 99vw;
     border-radius: 5px;
     text-align: center;
@@ -168,6 +168,10 @@ button{
     position: relative;
     top: 25%;
     left: 5%;
+}
+
+.hello{
+    color:#fff;
 }
 
 .divSect{
