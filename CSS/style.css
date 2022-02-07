@@ -1,31 +1,64 @@
-/* common styles*/
+/**************
+    common styles
+**************/
 *{
     font-family:merriweather, sans-serif;
     list-style-type:none;
     text-decoration:none;
-    font-size: 1rem;
 }
-
 html{
     font-size: 62.5%;
 }
-/* End common styles */
 
-
-/* JS changes */
+/************* 
+    JS changes 
+**************/
 .lightmode{
     background-color: rgb(182, 179, 179);
     color: black; 
 }
-
 .darkmode{
     background-color: rgb(88, 87, 87);
     filter: brightness(0.5) contrast(1.2);
     transition: background-color 0.6s ease;
     color: mintcream;
 }
-/* End JS changes */
 
+/************
+    MENU 
+*************/
+header{
+    margin: 0;
+}
+#menu{
+    width: 100vw;
+    height: 60px;
+}
+#menu ul{
+    width: 100vw;
+}
+#menu li{
+    display: inline-flex;
+    justify-content:space-between;
+}
+#menu a{
+    font-size:larger;
+    color: #fff;
+    font-weight: bolder;
+    justify-content: center;
+    background-color: #0197973d ;
+    box-shadow: darkblue 1px 1.5px;
+    border-radius: 5px;
+    padding: 10px 140px;
+    margin-bottom: 5px;
+}
+#menu a:hover{
+    background-color: rgb(33, 206, 33);
+}
+
+/*******************
+    Main Content
+*******************/
 .mainContent{
     background-image: url(https://p4nh4rith.github.io/siteCV/MEDIA/fond.png);
     height: 100vh;
@@ -37,15 +70,21 @@ html{
     border-radius: 5px;
 }
 .conteneur{
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
+    overflow: scroll;
 }
 .photo{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right:5px;
     width: 40%;
@@ -93,22 +132,7 @@ table, tr, td{
     padding: 10px;
     width: 100%;
 }
-footer{
-    position: fixed;
-    bottom: 15%;
-    left: -6.5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgba(74, 113, 138, 0.445);
-    border-radius: 5px;
-    transform: rotateZ(-90deg);
-}
-footer a{
-    font-size: 1.5rem;
-    margin: 18px;
-}
-/* End section styles */
+
 
 button{
     background-color: rgb(211, 210, 210);
@@ -117,28 +141,6 @@ button{
     height: 30px;
 }
 
-#menu{
-    width: 100%;
-    height: 60px;
-}
-#menu li{
-    display: inline-flex;
-    justify-content:space-between;
-}
-#menu a{
-    font-size:larger;
-    color: #fff;
-    font-weight: bolder;
-    justify-content: center;
-    background-color: #0197973d ;
-    box-shadow: darkblue 1px 1.5px;
-    border-radius: 5px;
-    padding: 10px 140px;
-    margin-bottom: 5px;
-}
-#menu a:hover{
-    background-color: rgb(33, 206, 33);
-}
 .presentation{
     color:#fff;
     width: 70%;
@@ -166,7 +168,30 @@ h3{
     font-size: 30px;
 }
 
-/*---------------------------- media queries ------------------------*/
+
+/*****************
+    Footer
+*****************/
+footer{
+    position: fixed;
+    bottom: 15%;
+    left: -6.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(74, 113, 138, 0.445);
+    border-radius: 5px;
+    transform: rotateZ(-90deg);
+}
+footer a{
+    font-size: 1.5rem;
+    margin: 18px;
+}
+
+
+/************************* 
+        media queries 
+**************************/
 @media screen and (max-width:360px){
     *{
         font-size: 1.5rem;    
