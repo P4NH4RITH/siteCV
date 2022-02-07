@@ -55,7 +55,9 @@ header{
 #menu a:hover{
     background-color: rgb(33, 206, 33);
 }
-
+.burger{
+    display: none;
+}
 /*******************
     Main Content
 *******************/
@@ -148,7 +150,7 @@ button{
     text-align: center;
     margin-bottom: 5%;
     position: relative;
-    top: 25%;
+    top: 10%;
     left: 0;
 }
 .presentation p{
@@ -254,7 +256,7 @@ footer a{
     }
 }
 
-@media screen and (max-width:414px) and (min-width:360px){
+@media screen and (max-width:414px){
     *{
         font-size: 1.5rem;    
     }
@@ -269,11 +271,11 @@ footer a{
     }
     .colonne-1{
         width: 160%;
-        order: 2;
+        order: 1;
     }
     .colonne-2{
         width: 160%;
-        order: 1;
+        order: 2;
     }   
     table, tr, td{
         text-align: left;
@@ -319,12 +321,45 @@ footer a{
 }
 
 
-@media screen and (max-width:1000px) and (min-width:414px) {
+@media screen and (max-width:1000px) {
     *{
         font-size: 1.5rem;    
     }
+    .burger{
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #014797a6 ;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        position: absolute;
+        left: 10px;
+        background-color: #fff;
+    }
+    .bar::before, .bar::after{
+        content: "";
+        width: 25px;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+    }
+    .bar::before{
+        transform: translateY(-10px);        
+    }
+    .bar::after{
+        transform: translateY(10px);        
+    }
+    nav ul{
+        display: none;
+    }
     .conteneur{
-        width:60%;
+        width: 60%;
         margin-left: 20%;
         margin-right: 20%;
         flex-direction: row;
@@ -337,12 +372,12 @@ footer a{
         height: auto;
     }
     .colonne-1{
-        order: 1;
+        order: 2;
         padding-left: 20px;
         border-radius: 20px 0 0 20px;
     }
     .colonne-2{
-        order: 2;
+        order: 1;
         padding-left: 20px;
         border-radius: 0 20px 20px 0;
     }
